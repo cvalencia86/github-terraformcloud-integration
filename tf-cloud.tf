@@ -11,15 +11,15 @@
     }
   }
 */
-  
-  terraform {
-    required_providers {
-        aws = {
-            source  = "hashicorp/aws"
-            version = ">= 6.13.0"
-        }
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 6.13.0"
     }
   }
+}
 #defines the AWS provider and region
 provider "aws" {
   region = "us-east-2"

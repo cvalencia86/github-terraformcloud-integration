@@ -10,12 +10,15 @@
       name = "terraform-cloud-cv"
     }
   }
-
+*/
     required_providers {
-        local = {
-            source  = "hashicorp/local"
-            version = ">= 2.5.3"
+        aws = {
+            source  = "hashicorp/aws"
+            version = ">= 6.13.0"
         }
     }
+
+#defines the AWS provider and region
+provider "aws" {
+  region = var.aws_region
 }
-*/

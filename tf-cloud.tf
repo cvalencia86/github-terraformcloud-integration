@@ -19,9 +19,9 @@
             version = ">= 6.13.0"
         }
     }
-
+  }
 #defines the AWS provider and region
 provider "aws" {
   region = var.aws_region
 }
-  }
+  
